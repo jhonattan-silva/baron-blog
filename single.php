@@ -4,7 +4,7 @@
         <div class="overlay">
             <div class="content">
                 <img src="<?php echo catch_that_image() ?>" class="img-responsive" />
-                <h1><span class="color"><?php the_title(); ?></span></h1>
+                <h1><span class="titulo"><?php the_title(); ?></span></h1>
                 <h4 class="subtitulo"><?php the_meta(); ?></h4>
             </div>
         </div>

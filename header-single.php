@@ -24,6 +24,7 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#meu-navbar">
             <span class="sr-only">Toggle navigation</span>
+            <!-- Icon-bar são as barrinhas do cione de menu portable -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
