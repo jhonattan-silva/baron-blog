@@ -21,5 +21,5 @@
 	</div>
 
 
-<?php get_sidebar(); ?>
+<?php if ( is_single() ) get_sidebar('single'); ?>
 <?php get_footer(); ?>

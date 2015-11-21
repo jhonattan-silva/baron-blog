@@ -18,13 +18,13 @@
 
 <body>
 <!-- Barra de menu -->
-     <nav id="brn-menu" class="navbar navbar-default navbar-fixed-top">
+    <nav id="brn-menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#meu-navbar">
             <span class="sr-only">Toggle navigation</span>
-            <!-- Icon-bar são as barrinhas do cione de menu portable -->
+            <!-- Icon-bar são as barrinhas do icone de menu portable -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

@@ -93,7 +93,7 @@ Version:        1.0
 
 
 
-div.category-games{
+.category-games{
     border-top: 7px solid #2B855E;
 }
 
@@ -134,8 +134,8 @@ div.category-games{
 }
 
 
-/*  SIDEBAR   */
-.ultimos-posts{
+/*  SIDEBARES   */
+.sidebars{
     margin-top: 20px;
     width: 100%;
 /*    border: 1px solid #000;*/
@@ -154,7 +154,7 @@ div.category-games{
   height: 15% !important;
 }
 
-.ultimos-posts span{
+.sidebars span{
   text-transform: uppercase;
   color: black;
   font-size: 22px;
