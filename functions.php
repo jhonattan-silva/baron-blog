@@ -40,8 +40,6 @@ function new_excerpt_length($length) {
 
 
 
-
-
 <?php
 function my_scripts() {
   wp_deregister_script('jquery');
@@ -98,9 +96,4 @@ function catch_that_image() {
   return $first_img;
 }
 ?>
-
-
-
-
-
 
