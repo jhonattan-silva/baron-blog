@@ -2,8 +2,8 @@
 
     <div class="col-md-3"> 
         <?php if ( function_exists( 'wp_tag_cloud' ) ) : ?>
-            <ul class="sidebars">
-                <span>TAGS POPULARES</span>
+            <ul>
+                <h3>TAGS POPULARES</h3>
                 <li><?php wp_tag_cloud( 'smallest=8&largest=22' ); ?></li>
             </ul>
         <?php endif; ?>
@@ -13,10 +13,10 @@
 
 
     <div class="col-md-3"><!-- Offset joga ele na posição 8 mesmo que não existam colunas a esquerda-->
-        <ul class="sidebars">
-        	<span>ULTIMOS POSTS</span>
+        <ul>
+        	<h3>ULTIMOS POSTS</h3>
             <?php $ultimos_posts = new WP_Query('showposts=5');
-            while ($ultimos_posts->have_posts()) : $ultimos_posts->the_post(); ?>
+            while ($ultimos_posts->have_posts()) : $ultimos_posts->the_post(); ?><hr>
             <li> 
                 <div class="miniatura"> <?php the_post_thumbnail(); ?>
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>
@@ -29,9 +29,9 @@
 
 
     <div class="col-md-3">
-        <ul class="sidebars">
-            <span>DESCUBRA O QUE NÃO PROCURAVA</span>
-            <?php $posts = get_posts('orderby=rand&numberposts=5'); foreach($posts as $post) { ?>
+        <ul >
+            <h3>DESCUBRA O QUE NÃO PROCURAVA</h3>
+            <?php $posts = get_posts('orderby=rand&numberposts=5'); foreach($posts as $post) { ?><hr>
             <li>
                 <div class="miniatura"> <?php the_post_thumbnail(); ?>
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a>

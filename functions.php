@@ -1,3 +1,4 @@
+
 <?php 
     // Registrar áreas de widgets
     function theme_widgets_init() {

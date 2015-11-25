@@ -9,17 +9,22 @@ Version:        1.1
 */
 
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 
-.singles, html{
-	font-family: 'Lato', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Kadwa);
+
+html{
+	font-family: 'Kadwa', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #5a5a5a;
 }
 
+body{
+	background-color: #323632;
+	color: #727A72;
 
+}
 
 h1{
 	text-transform: uppercase;
@@ -34,7 +39,9 @@ h4{
 
 
 p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Kadwa', serif;
+	font-size: 16px;
+	li
 }
 
 
@@ -240,14 +247,6 @@ nav#footer p{
 	    text-align: center;
 	}
 }
-
-
-
-
-
-
-
-
 
 
 

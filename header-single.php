@@ -19,7 +19,7 @@
 <body>
 
 <!-- BOTÕES SOCIAIS -->
-<div id="fb-root"></div>
+    <div id="fb-root"></div>
     <script>
         (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
@@ -33,6 +33,24 @@
     <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 
     <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+
+<!-- CATEGORIAS -->
+<?php 
+//referenciando as categorias
+$id_games = get_cat_ID( 'games' );
+$id_filmes = get_cat_ID( 'filmes' );
+$id_series = get_cat_ID( 'series' );
+$id_livros = get_cat_ID( 'livros' );
+$id_hqs = get_cat_ID( 'hqs' );
+    
+$link_games = get_category_link( $id_games );
+$link_filmes = get_category_link( $id_filmes );
+$link_series = get_category_link( $id_series );
+$link_livros = get_category_link( $id_livros );
+$link_hqs = get_category_link( $id_hqs );
+?>
+
 
 
 
@@ -56,11 +74,11 @@
         <div class="collapse navbar-collapse" id="meu-navbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#brn-home" class="page-scroll">Home</a></li>
-            <li><a href="#brn-Games" class="page-scroll">Games</a></li>
-            <li><a href="#brn-Filmes" class="page-scroll">Filmes</a></li>
-            <li><a href="#brn-Series" class="page-scroll">Series</a></li>
-            <li><a href="#brn-Livros" class="page-scroll">Livros</a></li>
-            <li><a href="#brn-HQs" class="page-scroll">HQs</a></li>
+            <li><a href="<?php echo esc_url($link_games); ?>" class="page-scroll">Games</a></li>
+            <li><a href="<?php echo esc_url($link_filmes); ?>" class="page-scroll">Filmes</a></li>
+            <li><a href="<?php echo esc_url($link_series); ?>" class="page-scroll">Series</a></li>
+            <li><a href="<?php echo esc_url($link_livros); ?>" class="page-scroll">Livros</a></li>
+            <li><a href="<?php echo esc_url($link_hqs); ?>" class="page-scroll">HQs</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

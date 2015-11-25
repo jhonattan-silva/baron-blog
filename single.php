@@ -1,6 +1,6 @@
 <?php get_header('single'); ?>
 
-<div class="row">
+
    <div id="brn-home" class="text-center">
         <div class="overlay">
             <div class="content">
@@ -12,34 +12,32 @@
     </div>
 
 
+<div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-8">
+    		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    		<p><?php the_content(); ?></p>
+    		<?php endwhile;?>
+    		<?php else: ?>
+    		<?php endif; ?>
 
-	<div class="col-md-8">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<?php the_content(); ?>
-		<?php endwhile;?>
-		<?php else: ?>
-		<?php endif; ?>
-	</div>
-
-<?php if ( is_single() ) get_sidebar('single'); ?>
-
-        <div class="col-md-8 social-bar">
-            <div class="col-md-3"><g:plusone></g:plusone></div><!-- Google + -->
+            <div class="col-md-2"><g:plusone></g:plusone></div><!-- Google + -->
             <!-- Twitter -->
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <a href="http://twitter.com/share" class="twitter-share-button"
                     data-url="<?php the_permalink(); ?>"
                     data-text="<?php the_title(); ?>"
                     data-count="vertical"
                     data-size="large">Tweet
                 </a>
-            </div>
-            <div class="fb-like col-md-3"></div><!-- Facebook -->
-        </div>
+            </div> <!-- fecha twitter -->
+            <div class="col-md-2 fb-like"></div><!-- Facebook -->
+        </div><!-- fecha o conteudo do post -->
 
+        <?php if ( is_single() ) get_sidebar('single'); ?>
+    </div> <!-- Fecha a linha -->
+</div> <!-- fecha o container -->
 
-
-</div>
 
 
 <?php get_footer(); ?>

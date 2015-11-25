@@ -31,17 +31,14 @@ $link_hqs = get_category_link( $id_hqs );
         
 <!-- CARROSSEL  *#*#*#**#*#**#*#**#*#*#*#**#**#*#**#*#**#*#*#**#*#*#**#**-->
 
-	<div id="meu-carousel" class="carousel slide" data-ride="carousel">
-        
-  
+	<div class="carousel slide" data-ride="carousel" >
 
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="<?php echo img_principal("7") ?>" alt="" />
-	<!--				<div class="carousel-caption">
-						<h1><a href="<?php //the_permalink(); ?>"> <?php //the_title(); ?> </a></h1>
-						<p class="lead">Just turns the Twitter Bootstrap Carousel in fullscreen mode, and scale to fit the screen resolution</p> lead do bootstrap, formata o paragrafo
-					</div>-->
+					<div class="carousel-caption">
+						<h1><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h1>
+						<p class="lead">Just turns the Twitter Bootstrap Carousel in fullscreen mode, and scale to fit the screen resolution</p>					</div>
 			</div>
             
            <div class="item">
@@ -54,7 +51,7 @@ $link_hqs = get_category_link( $id_hqs );
 
             <div class="item">
 				<img src="<?php echo img_principal("9") ?>" alt="" />
-                    <div class="carousel-caption">
+                   	<div class="carousel-caption">
 						<h1><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h1>
 						<p class="lead">Just turns the Twitter Bootstrap Carousel in fullscreen mode, and scale to fit the screen resolution</p>
 					</div>
@@ -62,15 +59,15 @@ $link_hqs = get_category_link( $id_hqs );
 
             <div class="item">
 				<img src="<?php echo img_principal("4") ?>" alt="" />
-                    <div class="carousel-caption">
+                	<div class="carousel-caption">
 						<h1><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h1>
 						<p class="lead">Just turns the Twitter Bootstrap Carousel in fullscreen mode, and scale to fit the screen resolution</p>
-					</div>
+					</div> 
 			</div>
             
             <div class="item">
 				<img src="<?php echo img_principal("8") ?>" alt="" />
-                    <div class="carousel-caption">
+                   	<div class="carousel-caption">
 						<h1><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></h1>
 						<p class="lead">Just turns the Twitter Bootstrap Carousel in fullscreen mode, and scale to fit the screen resolution</p>
 					</div>
@@ -137,28 +134,9 @@ $link_hqs = get_category_link( $id_hqs );
     </div>
     
     
-	</div>
+</div>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+      
         
         </div>
         <!-- FIM DO MENU -->
