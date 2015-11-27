@@ -86,7 +86,7 @@ $link_hqs = get_category_link( $id_hqs );
 	<div class="btn_inteiro">
 		<div class="btn_fora">
 			<a href="<?php echo esc_url($link_games); ?>">
-				<div class="btn_dentro" id="btnGames">
+				<div class="btn_dentro games">
 				    <span>GAMES</span><img src="http://i57.tinypic.com/2a5yg7a.png" alt="" />
 				</div>	
 			</a>
@@ -96,7 +96,7 @@ $link_hqs = get_category_link( $id_hqs );
 	<div class="btn_inteiro">
 		<div class="btn_fora">
 			<a href="<?php echo esc_url($link_filmes); ?>">
-				<div class="btn_dentro" id="btnFilmes">
+				<div class="btn_dentro filmes">
 					<span>FILMES</span><img src="http://i59.tinypic.com/t8srhg.png" alt="" />
 				</div>
 			</a>
@@ -106,7 +106,7 @@ $link_hqs = get_category_link( $id_hqs );
 	<div class="btn_inteiro">
 		<div class="btn_fora">
 			<a href="<?php echo esc_url($link_series); ?>">			
-				<div class="btn_dentro" id="btnSeries">
+				<div class="btn_dentro series">
 					<span>SERIES</span><img src="http://i61.tinypic.com/j5xkbb.png" alt="" />
 				</div>	
 			</a>
@@ -116,7 +116,7 @@ $link_hqs = get_category_link( $id_hqs );
     <div class="btn_inteiro">
 		<div class="btn_fora">
 			<a href="<?php echo esc_url($link_livros); ?>">			
-				<div class="btn_dentro" id="btnLivros">
+				<div class="btn_dentro livros">
 					<span>LIVROS</span><img src="http://i62.tinypic.com/33f9k0l.png" alt="" />
 				</div>	
 			</a>
@@ -126,7 +126,7 @@ $link_hqs = get_category_link( $id_hqs );
     <div class="btn_inteiro">
 		<div class="btn_fora">
 			<a href="<?php echo esc_url($link_hqs); ?>">			
-				<div class="btn_dentro" id="btnHQs">
+				<div class="btn_dentro HQs">
 					<span>HQs</span><img src="http://i58.tinypic.com/2hef3eo.jpg" alt="" />
 				</div>	
 			</a>

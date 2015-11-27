@@ -34,7 +34,7 @@
             <div class="col-md-2 fb-like"></div><!-- Facebook -->
         </div><!-- fecha o conteudo do post -->
 
-        <?php if ( is_single() ) get_sidebar('single'); ?>
+        <?php get_sidebar('single'); ?>
     </div> <!-- Fecha a linha -->
 </div> <!-- fecha o container -->
 
